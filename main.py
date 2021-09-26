@@ -1,8 +1,15 @@
+import sys
+import platform
 import cv2
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-img = cv2.imread('assets/test_image2.jpg')
+if platform.system() == "Windows":
+	pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+	print("You're on Windows")
+else:
+	print("You're probably on Linux")
+
+img = cv2.imread(sys.argv[1])
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 hImg, wImg, _ = img.shape
