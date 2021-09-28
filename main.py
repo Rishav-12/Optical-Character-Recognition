@@ -5,9 +5,6 @@ import pytesseract
 
 if platform.system() == "Windows":
 	pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
-	print("You're on Windows")
-else:
-	print("You're probably on Linux")
 
 img = cv2.imread(sys.argv[1])
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
