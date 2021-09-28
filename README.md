@@ -11,6 +11,7 @@ This project is inspired by Murtaza's Workshop YouTube channel
 
 ### Installation & Usage
 1. Install dependencies with `pip install -r requirements.txt`
+	* If this doesn't work, try installing the libraries `pillow`, `pytesseract`, and `opencv-python` manually one-by-one
 2. Use the command `python main.py [path_to_image_file]` to get the image alongwith the identified text
 
 Make sure you have tesseract installed. Refer the pytesseract docs for more information
