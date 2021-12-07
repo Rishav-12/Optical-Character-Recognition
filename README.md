@@ -1,4 +1,4 @@
-# Optical Character Recognition
+# findthosewords
 A program to detect text in images
 
 ### Requirements
