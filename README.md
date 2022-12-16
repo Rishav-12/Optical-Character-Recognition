@@ -5,7 +5,7 @@ A program to detect text in images
 * opencv
 * pytesseract
 
-There are three test images in the assets folder
+There are three test images in the [assets](assets) folder
 
 This project is inspired by a [video](https://youtu.be/6DjFscX4l_c) from Murtaza's Workshop YouTube channel
 
